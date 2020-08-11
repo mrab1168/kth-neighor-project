@@ -1,5 +1,3 @@
-from typing import List, Any
-
 from bs4 import BeautifulSoup as BS
 import pandas as pd
 from urllib.request import urlopen
@@ -8,25 +6,21 @@ pd.set_option('display.width', 1000)
 
 df = pd.read_csv("URL.csv")
 URL_List = df['URL']
-# URRL is the list
+# URL is the list
 
 MTFCCs = []
 OIDs = []
 GEOIDs = []
 STATEs = []
-
 CD116s = []
 BASENAMEs = []
 NAMEs = []
-
 LSADCs = []
 FUNCSTATs = []
 AREALANDs = []
-
 AREAWATERs = []
 CDSESSNs = []
 CENTLATs = []
-
 CENTLONs = []
 INTPTLATs = []
 INTPTLONs = []
